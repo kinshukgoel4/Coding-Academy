@@ -1,0 +1,267 @@
+<head>
+    <title>Feedback</title>
+</head>
+
+<body>
+    <header class="header">
+		<h1 class="logo"><a href="#">Coding Academy</a></h1>
+      <ul class="main-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="course.html">Courses</a></li>
+          <li><a href="contactus.html">Contact us</a></li>
+          <li><a href="feedback.html">Feedback Form</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="login.html">Login In/Sign Up</a></li>
+      </ul>
+	</header> 
+    <style>
+        * {
+    box-sizing: border-box;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgb(70, 68, 68);
+    border-radius: 4px;
+    resize: vertical;
+}
+
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgb(70, 68, 68);
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+h2 {
+    text-align: center;
+    font-size: 35px;
+    font-family: serif;
+}
+
+input[type=submit] {
+    background-color: rgb(91, 180, 231);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color:#a54490;
+    padding: 20px;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+    font-size: 25px;
+    text-align: right;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+    cursor: pointer;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#course {
+    cursor: pointer;
+}
+
+label {
+    color: aliceblue;
+}
+
+body {
+    background-color: rgb(84, 187, 199);
+}
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Montserrat', sans-serif;
+	line-height: 1.6;
+	margin: 0;
+	min-height: 100vh;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+h2,
+h3,
+a {
+	color: grey;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+
+.logo {
+	margin: 0;
+	font-size: 1.45em;
+}
+
+.main-nav {
+	margin-top: 5px;
+
+}
+.logo a,
+.main-nav a {
+	padding: 10px 15px;
+	text-transform: uppercase;
+	text-align: center;
+	display: block;
+}
+
+.main-nav a {
+	color: currentColor;
+	font-size: .99em;
+}
+
+.main-nav a:hover {
+	color: rgb(69, 69, 151);
+}
+
+
+
+.header {
+	padding-top: .5em;
+	padding-bottom: .5em;
+	border: 1px solid white;
+	background-color: whitesmoke;
+	-webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+
+
+
+@media (min-width: 800px) {
+	.header,
+	.main-nav {
+		display: flex;
+	}
+	.header {
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+		margin: 0 auto;
+		max-width: 1550px;
+	}
+
+}
+
+@media (min-width: 1075px) {
+	.header {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+}
+
+    </style>
+    <h2>FEED BACK FORM</h2>
+    <div class="container">
+        <form>
+            <div class="row">
+                <div class="col-25">
+                    <label for="la">First Name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="lname">Last Name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="email">Mail Id</label>
+                </div>
+                <div class="col-75">
+                    <input type="email" id="email" name="mailid" placeholder="Your mail id..">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="country">Course</label>
+                </div>
+                <div class="col-75">
+                    <select id="country" name="country">
+                        <option value="none" type="submit" id="course">Select Course</option>
+                        <option value="australia">Python</option>
+                        <option value="usa">C++</option>
+                        <option value="russia">C</option>
+                        <option value="japan">Java</option>
+                        <option value="india">Css</option>
+                        <option value="china">html</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="feed_back">Feed Back</label>
+                </div>
+                <div class="col-75">
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+
+
+
+</body>
